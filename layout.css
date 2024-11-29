@@ -1,0 +1,24 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin:10px;
+}
+#root {
+  display: flex;
+}
+
+.str-chat__channel-list {
+  width: 30%;
+  
+}
+.str-chat__channel {
+  width: 100%;
+  padding: 5px;
+  
+}
+.str-chat__thread {
+  width: 55%;
+}

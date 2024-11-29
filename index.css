@@ -1,0 +1,129 @@
+/* Styles globaux pour le chat */
+.chat-container {
+    max-width: 900px; /* Largeur maximale pour le conteneur */
+    margin: 0 auto; /* Centrer le conteneur */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Ombre douce */
+    background-color: #ffffff; /* Couleur de fond blanche */
+}
+
+/* Styles pour l'en-tête du canal */
+.channel-header {
+    background-color: #007bff; /* Couleur de fond de l'en-tête */
+    color: white; /* Couleur du texte */
+    padding: 15px; /* Espacement interne */
+    font-size: 18px; /* Taille de la police */
+    border-top-left-radius: 10px; /* Coins arrondis à gauche */
+    border-top-right-radius: 10px; /* Coins arrondis à droite */
+}
+
+/* Styles pour la liste des messages */
+.virtualized-message-list {
+    padding: 15px; /* Espacement interne */
+    max-height: 500px; /* Hauteur maximale */
+    overflow-y: auto; /* Activer le défilement vertical */
+}
+
+/* Styles pour les messages */
+.message {
+    padding: 10px 15px; /* Espacement interne */
+    border-radius: 8px; /* Coins arrondis */
+    margin: 5px 0; /* Marge entre les messages */
+    width: 80%; /* Largeur maximale des messages */
+    line-height: 1.5; /* Hauteur de ligne */
+}
+
+/* Styles pour les messages envoyés */
+.message.sent {
+    background-color: #e1f5fe; /* Couleur des messages envoyés */
+    align-self: flex-end; /* Aligner à droite */
+    color: #333; /* Couleur du texte */
+}
+
+/* Styles pour les messages reçus */
+.message.received {
+    background-color: #f1f1f1; /* Couleur des messages reçus */
+    align-self: flex-start; /* Aligner à gauche */
+    color: #333; /* Couleur du texte */
+}
+
+/* Styles pour le champ de saisie des messages */
+.message-input-container {
+    border-top: 1px solid #e0e0e0; /* Bordure supérieure */
+    background-color: #ffffff; /* Couleur de fond blanche */
+    padding: 10px; /* Espacement interne */
+}
+
+/* Styles pour le bouton d'envoi */
+.message-input-container button {
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 4px; /* Coins arrondis */
+    padding: 10px 15px; /* Espacement interne */
+    cursor: pointer; /* Curseur de pointeur */
+    transition: background-color 0.3s, transform 0.2s; /* Transitions douces */
+}
+
+/* Styles pour le bouton d'envoi au survol */
+.message-input-container button:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+    transform: translateY(-1px); /* Effet de survol */
+}
+
+/* Styles pour le champ de saisie */
+.message-input-container input {
+    flex: 1; /* Prendre tout l'espace disponible */
+    padding: 10px 15px; /* Espacement interne */
+    border: 1px solid #e0e0e0; /* Bordure légère */
+    border-radius: 4px; /* Coins arrondis */
+    font-size: 16px; /* Taille de la police */
+    margin-right: 10px; /* Marge à droite */
+    transition: border 0.3s; /* Transition douce pour le focus */
+}
+
+/* Styles pour le champ de saisie au focus */
+.message-input-container input:focus {
+    border-color: #007bff; /* Couleur de bordure au focus */
+    outline: none; /* Enlever le contour par défaut */
+}
+
+/* Styles pour le sélecteur d'émoticônes */
+.emoji-mart {
+    position: absolute; /* Positionner le sélecteur d'émoticônes */
+    bottom: 80px; /* Ajuster la position */
+    right: 20px; /* Ajuster la position */
+    z-index: 1000; /* S'assurer qu'il est au-dessus des autres éléments */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0, 0.2); /* Ombre pour le sélecteur */
+}
+
+/* Styles pour le bouton d'émoticônes */
+.emoji-button {
+    background-color: transparent; /* Fond transparent pour le bouton d'émoticônes */
+    border: none; /* Pas de bordure */
+    cursor: pointer; /* Curseur de pointeur */
+    font-size: 20px; /* Taille de la police */
+    margin-left: 10px; /* Marge à gauche */
+}
+
+/* Styles pour les notifications */
+.notification {
+    padding: 10px; /* Espacement interne */
+    background-color: #ffeb3b; /* Couleur de fond pour les notifications */
+    border-radius: 4px; /* Coins arrondis */
+    margin: 10px 0; /* Marge entre les notifications */
+    color: #333; /* Couleur du texte */
+    text-align: center; /* Centrer le texte */
+}
+
+/* Styles pour les utilisateurs en ligne */
+.user-status {
+    color: #4caf50; /* Couleur verte pour les utilisateurs en ligne */
+    font-weight: bold; /* Mettre en gras */
+}
+
+/* Styles pour les utilisateurs hors ligne */
+.user-status.offline {
+    color: #f44336; /* Couleur rouge pour les utilisateurs hors ligne */
+    font-weight: normal; /* Normaliser le poids de la police */
+}
